@@ -19,8 +19,7 @@ public class MainActivity extends Activity {
       setContentView(R.layout.activity_main);
       try { 
             if (googleMap == null) {
-               googleMap = ((MapFragment) getFragmentManager().
-               findFragmentById(R.id.map)).getMap();
+               googleMap = ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
             }
             //test
          googleMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
