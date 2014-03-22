@@ -1,14 +1,13 @@
 package lexake.shout;
 
+import android.app.Activity;
+import android.os.Bundle;
+
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
-
-import android.os.Bundle;
-import android.app.Activity;
-import android.widget.Toast;
 
 
 public class MainActivity extends Activity {
@@ -23,6 +22,7 @@ public class MainActivity extends Activity {
                googleMap = ((MapFragment) getFragmentManager().
                findFragmentById(R.id.map)).getMap();
             }
+            //test
          googleMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
          Marker TP = googleMap.addMarker(new MarkerOptions().
          position(TutorialsPoint).title("TutorialsPoint"));
